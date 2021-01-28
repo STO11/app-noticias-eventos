@@ -13,7 +13,6 @@ class Themes {
   );
 }
 
-
 class ThemeService {
   final _box = GetStorage();
   final _key = 'isDarkMode';
@@ -23,5 +22,12 @@ class ThemeService {
   void switchTheme() {
     Get.changeThemeMode(_inicialTheme() ? ThemeMode.light : ThemeMode.dark);
     _saveThemeToBox(!_inicialTheme());
+  }
+}
+
+class DrawerStyle {
+  getTextStyle() {
+    return TextStyle(
+        fontSize: 16, fontWeight: FontWeight.bold, color: Colors.black);
   }
 }

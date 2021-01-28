@@ -12,6 +12,6 @@ import 'package:noticiaseventos/main.dart';
 
 void main() {
   testWidgets('Login teste', (WidgetTester tester) async {
-   
+    
   });
 }

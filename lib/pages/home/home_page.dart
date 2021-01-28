@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:noticiaseventos/components/drawer_component.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key key}) : super(key: key);
@@ -6,7 +7,16 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container()
+      appBar: AppBar(
+        backgroundColor: Colors.amber,
+        title: Text('Concursos'),
+      ),
+      drawer: DrawerCompoenent(),
+      body: Column(
+        children: [
+
+        ],
+      )
     );
   }
 }

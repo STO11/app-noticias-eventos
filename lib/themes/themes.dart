@@ -6,10 +6,13 @@ class Themes {
   static final light = ThemeData.light().copyWith(
     backgroundColor: Colors.white,
     buttonColor: Colors.blue,
+    primaryColor: Colors.amber
   );
   static final dark = ThemeData.dark().copyWith(
     backgroundColor: Colors.black,
-    buttonColor: Colors.red,
+    primaryColor: Colors.black,
+    buttonColor: Colors.black,
+    //buttonColor: Colors.red,
   );
 }
 
@@ -26,7 +29,7 @@ class ThemeService {
 }
 
 class DrawerStyle {
-  getTextStyle() {
+  TextStyle getTextStyle() {
     return TextStyle(
         fontSize: 16, fontWeight: FontWeight.bold, color: Colors.black);
   }

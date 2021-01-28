@@ -15,8 +15,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      //theme: Themes.light,
-      darkTheme: Themes.dark,
+      theme: Themes.light,
+      //darkTheme: Themes.dark, 
       themeMode: ThemeService().theme, // add this
       getPages: AppPages.routes,
     );

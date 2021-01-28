@@ -3,14 +3,14 @@ import 'package:get/get.dart';
 import 'package:noticiaseventos/routes/routes.dart';
 import 'package:noticiaseventos/themes/themes.dart';
 
-class DrawerCompoenent extends StatefulWidget {
-  DrawerCompoenent({Key key}) : super(key: key);
+class DrawerComponent extends StatefulWidget {
+  DrawerComponent({Key key}) : super(key: key);
 
   @override
-  _DrawerCompoenentState createState() => _DrawerCompoenentState();
+  _DrawerComponentState createState() => _DrawerComponentState();
 }
 
-class _DrawerCompoenentState extends State<DrawerCompoenent> {
+class _DrawerComponentState extends State<DrawerComponent> {
   TextStyle textStyle = DrawerStyle().getTextStyle();
   @override
   Widget build(BuildContext context) {
